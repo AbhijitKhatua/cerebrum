@@ -1,0 +1,50 @@
+- `echo` : Prints the output on the terminal
+- `pwd(print working direcctory)`: Prints the current working directory to the terminal
+- `cd (Change Directory)` : Changes the directory.
+- `mkdir (Make Directory)` : Creates new folder/directory.
+- `ls` : Lists all the content of the directory
+-  `ls -l` : Lists all the content in list format
+- `touch` : Creates new file.
+- `more` : Opens the file.
+- `find` : Find things or view a file tree.
+- `find <folder name>` : See the tree of that directory.
+- `find -name <file/directory name>` : To find the directory or file path.
+- `cp <source> <destination>` : Copy files
+- `mv <initial> <changed>` : Rename or Move the files
+- `command --help` : Gets more info about the command.
+- `command -a` : Flags all the contents such as hidden files
+- `.` : Current directory
+- `..`  : Previous Directory
+- `rm <file name>` : Removes the file.
+- `rmdir <folder name>` : Removes directory.
+- `rmdir -r <folder name>` : Remove directory recursively that removes the directory and its contents.
+- `date` : show current date and time
+- `sleep` : wait for a given number of seconds.
+- `uptime` : find out how long the system has been up.
+-  `clear` : cleans the terminal.
+- `histtory` : shows history of previous commands.
+- `whoami` : show your username.
+- `id` ; prints user identity.
+- `passwd` : change user password.
+- `last` : check log history.
+- `chmod` : change file/directory access permissions.
+- `chown` : change file/directory ownership.
+- `cat` : concatenate files and show contents to the standard output.
+- `less` : an improved pagination tool for viewing text files (better than `more` command).
+- `head` : show the first 10 lines of text file (you can specify any number of lines).
+- `tail` : show the last 10 lines of text file (any number can be specified).
+- `grep` :  search for patterns in text files.
+- `hostname` : show or set server hostname
+- `w` : display system load, who’s logged in and what they are doing.
+- `uname` : print Unix system information.
+- `shutdown` : graceful shutdown and reboot of your system
+- `halt` : ungraceful (without stopping OS services) shutdown
+- `reboot` : ungraceful reboot (without stopping OS services)
+- `ipconfig` : show and set IP addresses (found almost everywhere)
+- `ip` : show and set IP addresses (in recent Linux versions)
+- `ping` : check if remote host is reachable via ICMP ping
+- `netstat` : show network stats and routing information
+- `ps` : list processes
+- `top` : show tasks and system status (check out [htop](https://www.unixtutorial.org/commands/htop) as well)
+-  `kill` : kill a process (stop application running).
+- `man` : view manual pages for Unix commands.
