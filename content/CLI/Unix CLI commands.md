@@ -22,7 +22,7 @@
 - `sleep` : wait for a given number of seconds.
 - `uptime` : find out how long the system has been up.
 -  `clear` : cleans the terminal.
-- `histtory` : shows history of previous commands.
+- `history` : shows history of previous commands.
 - `whoami` : show your username.
 - `id` ; prints user identity.
 - `passwd` : change user password.
