@@ -47,6 +47,8 @@ Rules for Python variables:
 - Variable names are case-sensitive (age, Age and AGE are three different variables)
 - A variable name cannot be any of the [Python keywords](https://www.w3schools.com/python/python_ref_keywords.asp).
 
+![[Pasted image 20250330105359.png]]
+
 ```python
 myvar = "John"  
 my_var = "John"  
