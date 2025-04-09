@@ -20,15 +20,6 @@ const statement = "She said, \"Hello!\"";
 console.log(statement); // She said, "Hello!"
 ```
 
-## Template Literals (Template Strings) and String Interpolation
-
-- **Definition**: Template literals are defined with backticks (`). They allow for easier string manipulation, including embedding variables directly inside a string, a feature known as string interpolation.
-
-```js
-const name = "Jessica";
-const greeting = `Hello, ${name}!`; // "Hello, Jessica!"
-```
-
 ## ASCII, the `charCodeAt()` Method and the `fromCharCode()` Method
 
 - **ASCII**: ASCII, short for American Standard Code for Information Interchange, is a character encoding standard used in computers to represent text. It assigns a numeric value to each character, which is universally recognized by machines.
@@ -127,3 +118,47 @@ console.log(text.trimEnd()); // "  Hello, world!"
 ```js
 const answer = window.prompt("What's your favorite animal?"); // This will change depend
 ```
+
+
+### What Is the prompt() Method, and How Does It Work?
+
+The `prompt()` method is an important part of JavaScript's interaction with the user. It’s one of the simplest ways to get input from a user through a small pop-up dialog box.
+
+You'll often see it used in cases where the webpage needs a piece of information from the user, such as a name or some other form of text input.
+
+So, what exactly does the `prompt()` method do? It opens a dialog box that asks the user for some input, and then it returns the text entered by the user as a string.
+
+The `prompt()` method takes two arguments: The first one is the message which will appear inside the dialog box, typically prompting the user to enter information. And the second one is a default value which is optional and will fill the input field initially.
+
+Here's an example of how it works:
+
+```js
+let userName = prompt("What is your name?", "Guest");
+```
+
+In this example, the `prompt()` method displays a dialog box with the message `What is your name?` and an input field that initially contains the value `Guest`.
+
+If the user types their name and presses "OK", the `userName` variable will store the entered value. If the user presses "Cancel," the `userName` variable will be set to `null`. `null` signifies that the user did not provide any input.
+
+When the page first loads, you'll see the prompt dialog box appear with the message `What is your name?` and the input field pre-filled with `Guest`.
+
+Keep in mind that the `prompt()` method will halt the execution of the script until the user interacts with the dialog box.
+
+This means the rest of your JavaScript code won’t run until the user either provides input and clicks "OK", or cancels the prompt.
+
+One other point to consider is that while `prompt()` is useful for quick testing or small applications, it's generally avoided in modern, complex web applications due to its disruptive nature and inconsistent behavior across different browsers.
+
+Here's an example:
+
+```js
+let age = prompt("How old are you?");
+if (age !== null) {
+  console.log("You are " + age + " years old.");
+} else {
+  console.log("User cancelled the prompt.");
+}
+```
+
+In this example, if the user provides input, it will be displayed in the console. If they cancel, the console will log that the user canceled the prompt.
+
+By understanding the `prompt()` method, you gain a simple way to interact with users and retrieve information directly through the browser, even though it may not be widely used in modern web applications.
