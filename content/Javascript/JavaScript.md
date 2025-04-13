@@ -29,7 +29,7 @@ const veryBigNumber = 1234567890123456789012345678901234567890n;
 2. To assign a value to a variable, you can use the assignment operator `=`.
 3. Variables declared using `let` can be reassigned a new value.
 4. Apart from `let`, you can also use `const` to declare a variable. However, a `const` variable cannot be reassigned a new value.
-### [[Strings]]
+### [[What Is String]]
 
 - Strings are sequences of characters enclosed in quotes. They can be created using single quotes and double quotes.
 - Strings are immutable in JavaScript. This means that once a string is created, you cannot change the characters in the string. However, you can still reassign strings to a new value.
