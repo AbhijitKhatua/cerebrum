@@ -42,44 +42,35 @@ console.log(result);  // true
 
 Here, the search for the substring JavaScript starts from the 7th position in the string, ensuring it skips any characters before this position.The includes() method only returns a true or false result. It does not provide information on where the substring is located in the string or how many times it occurs. If you need that level of detail, other methods, such as the indexOf() method might be more suitable.
 
-- **The `slice()` Method**: This method extracts a portion of a string and returns a new string, without modifying the original string. It takes two parameters: the starting index and the optional ending index.
+- **The  [[slice()]] Method**: This method extracts a portion of a string and returns a new string, without modifying the original string. It takes two parameters: the starting index and the optional ending index.
 
-```js
-const text = "freeCodeCamp";
-console.log(text.slice(0,4)); // "free"
-console.log(text.slice(4,8)); // "Code"
-console.log(text.slice(8,13)); // "Camp"
-```
-
-- **The `toUpperCase()` Method**: This method converts all the characters to uppercase letters and returns a new string with all uppercase characters.
+- **The [[toUpperCase() & toLoweCase()]] Method**: 
 
 ```js
 const text = "Hello, world!";
 console.log(text.toUpperCase()); // "HELLO, WORLD!"
 ```
 
-- **The `toLowerCase()` Method**: This method converts all characters in a string to lowercase.
-
 ```js
 const text = "HELLO, WORLD!"
 console.log(text.toLowerCase()); // "hello, world!"
 ```
 
-- **The `replace()` Method**: This method is used to find a specified value (like a word or character) in a string and replace it with another value.
+- **The [[replace()]] Method**: This method is used to find a specified value (like a word or character) in a string and replace it with another value.
 
 ```js
 const text = "I like cats";
 console.log(text.replace("cats", "dogs")); // "I like dogs"
 ```
 
-- **The `repeat()` Method**: This method is used to repeat a string a specified number of times.
+- **The [[repeat()]] Method**: This method is used to repeat a string a specified number of times.
 
 ```js
 const text = "Hello";
 console.log(text.repeat(3)); // "HelloHelloHello"
 ```
 
-- **The `trim()` Method**: This method is used to remove whitespaces from both the beginning and the end of a string.
+- **The [[trim()]] Method**: This method is used to remove whitespaces from both the beginning and the end of a string.
 
 ```js
 const text = "  Hello, world!  ";
@@ -100,7 +91,7 @@ const text = " Hello, world! ";
 console.log(text.trimEnd()); // "  Hello, world!"
 ```
 
-- [[The `prompt()` Method]]: This method of thw `window` is used to get information from a user through the form of a dialog box. This method takes two arguments. The first argument is the message which will appear inside the dialog box, typically prompting the user to enter information. The second one is a default value which is optional and will fill the input field initially.
+- The [[prompt()]] Method 1: This method of the `window` is used to get information from a user through the form of a dialog box. This method takes two arguments. The first argument is the message which will appear inside the dialog box, typically prompting the user to enter information. The second one is a default value which is optional and will fill the input field initially.
 
 ```js
 const answer = window.prompt("What's your favorite animal?"); // This will change depend
