@@ -8,7 +8,7 @@ console.log(num.toFixed(2)); // Output: "3.14"
 
 In this case, we're limiting the number of decimal places to two. So, `3.14159` becomes `3.14`. It's important to note that `.toFixed()` returns a string, not a number. This is because the method is primarily intended for formatting numbers for display, not for further calculations.
 
-The `.toFixed()` method rounds the number to the nearest value that can be represented with the specified number of decimal places. This rounding behavior is important to understand:
+The `.toFixed()` method ==rounds the number== to the nearest value that can be represented with the specified number of decimal places. This rounding behavior is important to understand:
 
 ```js
 console.log((3.14159).toFixed(3));  // Output: "3.142"
