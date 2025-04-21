@@ -21,3 +21,6 @@ console.log(statement); // She said, "Hello!"
 ```
 
 ## Other Common [[String Methods]]
+
+[[What Happens When You Try to Do Calculations with Numbers and Strings]]
+[[Template literals & String Interpolation]]

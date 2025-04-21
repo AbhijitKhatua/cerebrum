@@ -44,14 +44,14 @@ console.log(infiniteNumber); // Infinity
 console.log(typeof infiniteNumber); // number
 ```
 
-Sometimes in JavaScript, some mathematical operations don't result in a valid number. For instance, if you try to perform a mathematical operation on something that isn't a number, you'll get `NaN`, which stands for "Not a Number":
+Sometimes in JavaScript, some mathematical operations don't result in a valid number. For instance, if you try to perform a mathematical operation on something that isn't a number, you'll get [[NaN]], which stands for "Not a Number":
 
 ```js
 const notANumber = 'hello world' / 2;
 console.log(notANumber); // NaN
 ```
 
-Surprisingly, the type of `NaN` is also `Number`:
+Surprisingly, the type of [[NaN]] is also `Number`:
 
 ```js
 const notANumber = 'hello world' / 2;

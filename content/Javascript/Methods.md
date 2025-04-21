@@ -1,0 +1,4 @@
+-  [[String Methods]]
+- [[toFixed() method]]
+- [[parseFloat() & parseInt()]]
+- 

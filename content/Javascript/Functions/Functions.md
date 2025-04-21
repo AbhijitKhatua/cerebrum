@@ -86,3 +86,6 @@ function greetings(name = "Guest") {
 greetings(); // Hello, Guest!
 greetings("Anna"); // Hello, Anna!
 ```
+
+[[Arrow Functions]]
+[[Scope in Javascript]]

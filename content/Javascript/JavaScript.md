@@ -4,11 +4,11 @@ While HTML and CSS provide website structure, JavaScript brings interactivity to
 
 Data types help the program understand the kind of data it's working with, whether it's a number, text, or something else.
 
-- **Number**: A number represents both integers and floating-point values. Examples of integers include 7, 19, and 90.
+- [[Number Type]]: A number represents both integers and floating-point values. Examples of integers include 7, 19, and 90.
 - **Floating point**: A floating point number is a number with a decimal point. Examples include 3.14, 0.5, and 0.0001.
 - **String**: A string is a sequence of characters, or text, enclosed in quotes. `"I like coding"` and `'JavaScript is fun'` are examples of strings.
-- **Boolean**: A boolean represents one of two possible values: `true` or `false`. You can use a boolean to represent a condition, such as `isLoggedin = true`.
-- **Undefined and Null**: An `undefined` value is a variable that has been declared but not assigned a value. A `null` value is an empty value, or a variable that has intentionally been assigned a value of `null`.
+- [[Booleans]]: A boolean represents one of two possible values: `true` or `false`. You can use a boolean to represent a condition, such as `isLoggedin = true`.
+- [[Undefined & Null]]: An `undefined` value is a variable that has been declared but not assigned a value. A `null` value is an empty value, or a variable that has intentionally been assigned a value of `null`.
 - **Object**: An object is a collection of key-value pairs. The key is the property name, and the value is the property value.
 - **Symbol**: The Symbol data type is a unique and immutable value that may be used as an identifier for object properties.
 
@@ -29,7 +29,7 @@ const veryBigNumber = 1234567890123456789012345678901234567890n;
 2. To assign a value to a variable, you can use the assignment operator `=`.
 3. Variables declared using `let` can be reassigned a new value.
 4. Apart from `let`, you can also use `const` to declare a variable. However, a `const` variable cannot be reassigned a new value.
-### [[What Is String]]
+### [[String]]
 
 - Strings are sequences of characters enclosed in quotes. They can be created using single quotes and double quotes.
 - Strings are immutable in JavaScript. This means that once a string is created, you cannot change the characters in the string. However, you can still reassign strings to a new value.
@@ -84,3 +84,12 @@ console.log(typeof isLoggedin); // "boolean"
 let user = null;
 console.log(typeof user); // "object"
 ```
+
+### [[Functions]]
+### [[Operators]]
+
+### [[Statements]]
+
+### [[Methods]]
+
+### [[Objects]]
