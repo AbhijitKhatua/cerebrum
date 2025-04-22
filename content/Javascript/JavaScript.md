@@ -93,3 +93,5 @@ console.log(typeof user); // "object"
 ### [[Methods]]
 
 ### [[Objects]]
+
+### [[Arrays]]

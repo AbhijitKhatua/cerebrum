@@ -21,7 +21,7 @@ console.log(text.indexOf("fox")); // 16
 console.log(text.indexOf("cat")); // -1
 ```
 
-- **The [[includes()]] Method**: This method is used to check if a string contains a specific substring. If the substring is found within the string, the method returns true. Otherwise, it returns false.
+- **The [[Javascript/Strings/includes()]] Method**: This method is used to check if a string contains a specific substring. If the substring is found within the string, the method returns true. Otherwise, it returns false.
 its a case sensitive method
 ```js
 const text = "The quick brown fox jumps over the lazy dog.";
@@ -32,7 +32,7 @@ console.log(text.includes("cat")); // false
 You can also use the `includes()` method to check for a substring starting at a specific index in the string by providing a second parameter:
 
 
-- **The  [[slice()]] Method**: This method extracts a portion of a string and returns a new string, without modifying the original string. It takes two parameters: the starting index and the optional ending index.
+- **The  [[Javascript/Strings/slice()]] Method**: This method extracts a portion of a string and returns a new string, without modifying the original string. It takes two parameters: the starting index and the optional ending index.
 
 - **The [[toUpperCase() & toLoweCase()]] Method**: 
 
