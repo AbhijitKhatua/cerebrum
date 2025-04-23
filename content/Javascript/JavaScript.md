@@ -86,6 +86,9 @@ console.log(typeof user); // "object"
 ```
 
 ### [[Functions]]
+
+In JavaScript, functions and object methods are both ways to encapsulate reusable code, but they have some key differences in how they are defined, used, and the context in which they operate. Understanding these differences is crucial for writing effective and organized JavaScript code.
+ [[Difference Between Functions and Object Methods]]
 ### [[Operators]]
 
 ### [[Statements]]
@@ -94,4 +97,9 @@ console.log(typeof user); // "object"
 
 ### [[Objects]]
 
+In JavaScript, understanding the difference between [[primitive and non-primitive data types]] is important for writing efficient and bug-free code.
 ### [[Arrays]]
+
+
+---------------------
+### What Is [[JSON]], and How Do You Access Values Using Bracket and Dot Notation?
