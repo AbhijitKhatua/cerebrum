@@ -100,6 +100,7 @@ In JavaScript, functions and object methods are both ways to encapsulate reusabl
 In JavaScript, understanding the difference between [[primitive and non-primitive data types]] is important for writing efficient and bug-free code.
 ### [[Arrays]]
 
+## [[Loops]]
 
 ---------------------
 ### What Is [[JSON]], and How Do You Access Values Using Bracket and Dot Notation?
