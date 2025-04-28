@@ -101,6 +101,8 @@ In JavaScript, understanding the difference between [[primitive and non-primitiv
 ### [[Arrays]]
 
 ## [[Loops]]
+## [[Constructors]]
+[[Common Practices for Naming Variables and Functions]]
 
 ---------------------
 ### What Is [[JSON]], and How Do You Access Values Using Bracket and Dot Notation?
