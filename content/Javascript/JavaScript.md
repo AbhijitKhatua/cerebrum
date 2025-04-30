@@ -104,5 +104,10 @@ In JavaScript, understanding the difference between [[primitive and non-primitiv
 ## [[Constructors]]
 [[Common Practices for Naming Variables and Functions]]
 
+### [[ Linters and Formatters]]
+### [[ Memory Management]]
+
+### [[Closures]]
+
 ---------------------
 ### What Is [[JSON]], and How Do You Access Values Using Bracket and Dot Notation?

@@ -131,3 +131,5 @@ In this example, `first` and `second` capture the first two elements of the�
 
 #### [[The Spread Operator ...]]
 
+### [[Array Length]]
+
