@@ -25,7 +25,7 @@ const veryBigNumber = 1234567890123456789012345678901234567890n;
 ```
 ### Variables In JS
 
-1. Var, Let & const
+1. [[Var]], Let & const
 2. To assign a value to a variable, you can use the assignment operator `=`.
 3. Variables declared using `let` can be reassigned a new value.
 4. Apart from `let`, you can also use `const` to declare a variable. However, a `const` variable cannot be reassigned a new value.
