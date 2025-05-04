@@ -26,6 +26,9 @@ const fruit = {
 for (const prop in fruit) {
   console.log(fruit[prop]);
 }
+//apple
+//red
+//0.99
 ```
 
 The `prop` variable represents the current property of the object. `fruit[prop]` is used to access the value of each property.
@@ -50,6 +53,9 @@ const person = {
 for (const prop in person) {
   console.log(person[prop]);
 }
+//Jhon
+//30
+//{street: '123 Main St', city: 'Anytown', state: 'CA'}
 ```
 
 The `address` property is an object itself. The `for...in` loop will also loop over the properties of the `person` object and log the entire `address` object to the console.
@@ -78,6 +84,11 @@ for (const prop in person) {
     console.log(person[prop]);
   }
 }
+//John
+//30
+//123 Main St
+//Anytown
+//CA
 ```
 
 In this example have a custom function `isObject` that checks if the value is an object.

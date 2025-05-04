@@ -18,7 +18,7 @@ In this first example we have an array of numbers and we want to loop over each 
 const numbers = [1, 2, 3, 4, 5];
 
 for (const num of numbers) {
-  console.log(num);
+  console.log(num);// 1, 2, 3, 4, 5 iterated
 }
 ```
 
@@ -32,7 +32,7 @@ Here is another example where we have a string and we want to loop over each cha
 const str = 'freeCodeCamp';
 
 for (let char of str) {
-  console.log(char);
+  console.log(char); // f r e e c o d e c a m p
 }
 ```
 
@@ -69,6 +69,9 @@ const people = [
 for (const person of people) {
   console.log(`${person.name} is ${person.age} years old`);
 }
+//John is 30 years old
+//Jane is 25 years old
+//Jim is 40 years old
 ```
 
 In this example, we have an array of objects called `people`. Each object has a `name` and `age` property.
