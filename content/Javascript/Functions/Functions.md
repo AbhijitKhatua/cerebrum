@@ -90,3 +90,4 @@ greetings("Anna"); // Hello, Anna!
 [[Arrow Functions]]
 [[Scope in Javascript]]
 [[Callback Functions]]
+[[Higher order Functions]]
