@@ -91,3 +91,4 @@ greetings("Anna"); // Hello, Anna!
 [[Scope in Javascript]]
 [[Callback Functions]]
 [[Higher order Functions]]
+[[Method chaining]]

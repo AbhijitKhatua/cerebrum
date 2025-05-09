@@ -2,3 +2,8 @@
 - [[toFixed() method]]
 - [[parseFloat() & parseInt()]]
 - [[toString()]]
+- [[map]]
+- [[filter]]
+- [[reduce]]
+- [[sort]]
+- [[every and some]]

@@ -54,6 +54,11 @@ let numbers = [1, 2, 3, 4, 5];
 numbers.forEach((number, index, array) => {
   console.log(`Element ${number} is at index ${index} in array ${array}`);
 });
+//Element 1 is at index 0 in array 1,2,3,4,5
+//Element 2 is at index 1 in array 1,2,3,4,5
+//Element 3 is at index 2 in array 1,2,3,4,5
+//Element 4 is at index 3 in array 1,2,3,4,5
+//Element 5 is at index 4 in array 1,2,3,4,5
 ```
 
 This would log information about each element, its index, and the original array.
