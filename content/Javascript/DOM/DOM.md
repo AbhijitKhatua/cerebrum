@@ -116,3 +116,4 @@ Understanding these relationships is essential for manipulating and navigating t
 [[Remove Nodes]]
 [[Navigator, Window, and Document]]
 [[Event Object]]
+[[Manipulate Styles]]

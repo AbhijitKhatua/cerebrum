@@ -17,3 +17,5 @@ You'll also likely run in to the `stopPropagation()` method. This method preve
 There are also a large number of properties that are specific to certain implementations of the `Event` object. For example, a `FetchEvent` will have a request property to contain the request that triggered the event.
 
 If you are ever unsure of what properties are available, you can log the `Event` object in question or even check the documentation.
+
+[[Inline Event Handlers]]

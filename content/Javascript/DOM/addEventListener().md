@@ -95,3 +95,4 @@ hello
 There are many more events that you can listen for using the `addEventListener()` method. Some common events include `mouseover`, `mouseout`, `keydown`, `keyup`, and `submit`.
 
 In future lecture videos, we will cover more events and how to use the `addEventListener()` method to listen for them.
+[[removeEventListener()]]
