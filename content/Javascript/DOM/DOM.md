@@ -113,3 +113,6 @@ An ancestor node is an element that is higher up in the DOM tree hierarchy than 
 Understanding these relationships is essential for manipulating and navigating the DOM tree using JavaScript.
 
 [[Diff in innerText, textContent, and innerHTML]]
+[[Remove Nodes]]
+[[Navigator, Window, and Document]]
+[[Event Object]]
