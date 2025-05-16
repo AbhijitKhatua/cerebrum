@@ -19,3 +19,5 @@ There are also a large number of properties that are specific to certain impleme
 If you are ever unsure of what properties are available, you can log the `Event` object in question or even check the documentation.
 
 [[Inline Event Handlers]]
+[[DOMContentLoaded]]
+[[setTimeout() & setInterval()]]

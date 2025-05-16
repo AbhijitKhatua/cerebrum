@@ -117,3 +117,4 @@ Understanding these relationships is essential for manipulating and navigating t
 [[Navigator, Window, and Document]]
 [[Event Object]]
 [[Manipulate Styles]]
+[[Canvas API]]
