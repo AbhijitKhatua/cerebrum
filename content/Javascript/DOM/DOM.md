@@ -118,3 +118,5 @@ Understanding these relationships is essential for manipulating and navigating t
 [[Event Object]]
 [[Manipulate Styles]]
 [[Canvas API]]
+[[requestAnimationFrame() API]]
+[[Web Animations API]]
