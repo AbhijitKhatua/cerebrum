@@ -111,6 +111,48 @@ In JavaScript, a [[constructor]] is a special type of function used to create an
 
 what is [[optional chaining operator]]
 
+In JavaScript, almost "everything" is an object.
+
+- Objects are objects
+- Maths are objects
+- Functions are objects
+- Dates are objects
+- Arrays are objects
+- Maps are objects
+- Sets are objects
+
+All JavaScript values, except primitives, are objects.
+
+---
+
+## JavaScript Primitives
+
+A **primitive value** is a value that has no properties or methods.
+
+**3.14** is a primitive value
+
+A **primitive data type** is data that has a primitive value.
+
+JavaScript defines 7 types of primitive data types:
+
+- `string`
+- `number`
+- `boolean`
+- `null`
+- `undefined`
+- `symbol`
+- `bigint`
+
+Objects written as name value pairs are similar to:
+
+- Associative arrays in PHP
+- Dictionaries in Python
+- Hash tables in C
+- Hash maps in Java
+- Hashes in Ruby and Perl
+
+
+
 ----------------------------------------
 - [[Math Object]]
 - 
