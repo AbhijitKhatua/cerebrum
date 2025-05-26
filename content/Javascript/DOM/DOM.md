@@ -120,3 +120,4 @@ Understanding these relationships is essential for manipulating and navigating t
 [[Canvas API]]
 [[requestAnimationFrame() API]]
 [[Web Animations API]]
+[[Dialog]]
