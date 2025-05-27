@@ -21,3 +21,4 @@ If you are ever unsure of what properties are available, you can log the `Event
 [[Inline Event Handlers]]
 [[DOMContentLoaded]]
 [[setTimeout() & setInterval()]]
+[[Event bubbling & delegation]]
