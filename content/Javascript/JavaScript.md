@@ -112,5 +112,10 @@ In JavaScript, understanding the difference between [[primitive and non-primitiv
 ### [[Modules]]
 [[Async JS]]
 [[Fetch API]]
+[[Promise]]
+[[Engine & Runtime]]
+
+### [[Geolocation API]]
+
 ---------------------
 ### What Is [[JSON]], and How Do You Access Values Using Bracket and Dot Notation?

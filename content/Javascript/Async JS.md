@@ -37,3 +37,4 @@ To implement this, you could create a promise to keep the user interface active 
 Asynchronous programming is a powerful tool for building efficient JavaScript applications. By understanding the differences between synchronous and asynchronous programming, you can choose the right approach for your application and write more efficient code.
 
 [[async & defer]]
+[[async & await]]
