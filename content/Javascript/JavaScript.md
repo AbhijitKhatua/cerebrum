@@ -110,5 +110,7 @@ In JavaScript, understanding the difference between [[primitive and non-primitiv
 ### [[Closures]]
 
 ### [[Modules]]
+[[Async JS]]
+[[Fetch API]]
 ---------------------
 ### What Is [[JSON]], and How Do You Access Values Using Bracket and Dot Notation?
