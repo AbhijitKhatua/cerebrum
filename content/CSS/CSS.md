@@ -147,3 +147,5 @@
 - **Enhanced color spaces**: `lab()`, `oklab()`, `lch()` for modern displays
     
 - **CSS Toggles**: Like a built-in switch for stateful UI (`@toggle` proposal)
+
+Trigonometric functions
