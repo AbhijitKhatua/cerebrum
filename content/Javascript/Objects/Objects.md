@@ -22,7 +22,7 @@ const person = {
 };
 ```
 
-In this example, we've created an object called `person` with three properties: `name`, `age`, and `city`. Each property has a name and a value, separated by a colon.
+In this example, we've created an object calle\d `person` with three properties: `name`, `age`, and `city`. Each property has a name and a value, separated by a colon.
 
 Now, let's explore how you can access these properties. There are two main ways to access object properties in JavaScript: dot notation and bracket notation.
 
