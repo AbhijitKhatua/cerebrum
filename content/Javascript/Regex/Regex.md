@@ -362,3 +362,7 @@ And the last is the single-line modifier, or the `s` flag. Remember that the m
 The single-line modifier allows a wildcard character, represented by a period (`.`) in regex, to match linebreaks – effectively treating the string as a single line of text.
 
 There are quite a few of these modifiers, but the `i` and `g` flags are the ones you'll use most frequently, and are the most important to remember.
+
+[[Match and Replace All Occurrences in a String]]
+[[Character Classes]]
+[[Lookahead and Lookbehind Assertions]]
