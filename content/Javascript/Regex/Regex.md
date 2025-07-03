@@ -366,3 +366,4 @@ There are quite a few of these modifiers, but the `i` and `g` flags are the 
 [[Match and Replace All Occurrences in a String]]
 [[Character Classes]]
 [[Lookahead and Lookbehind Assertions]]
+[[Capturing Groups and Backreferences]]

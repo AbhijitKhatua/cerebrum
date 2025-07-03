@@ -119,6 +119,7 @@ In JavaScript, understanding the difference between [[primitive and non-primitiv
 [[CRUD]]
 
 [[OOPs]]
+[[Maps & Sets]]
 
 ---------------------
 ### What Is [[JSON]], and How Do You Access Values Using Bracket and Dot Notation?
