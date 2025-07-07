@@ -11,7 +11,6 @@ OOP helps developers to mimic the relationship between objects in the real world
 - Makes your code more flexible
     
 - Makes your code reusable.
-    
 
 ## The Principles of OOP
 
@@ -53,7 +52,6 @@ In essence, it's a very simple concept. It works like this:
 2. There are one or more sub-classes of "things" that inherit the properties of the base class (sometimes also referred to as the "super-class")
     
 3. There might be some other sub-sub-classes of "things" that inherit from those classes in point 2.
-    
 
 Note that each sub-class inherits from its super-class. In turn, a sub-class might also be a super-class, if there are classes inheriting from that sub-class.
 
@@ -64,7 +62,6 @@ Here's a practical example:
 2. There is another class, a sub-class inheriting from Animal, and the name of this class is Mammal.
     
 3. Next, there is another class, inheriting from Mammal, and this class is Elephant.
-    
 
 Thus, in the above example, I'm modeling objects from the real world by constructing relationships between Animal, Mammal, and Elephant. Each of them is a separate class, a blueprint for specific object instances that can be constructed as needed.
 
@@ -105,7 +102,6 @@ It helps to think of it in the following terms:
 - Abstraction is about extracting the _concept_ of what you're trying to do, rather than dealing with a specific manifestation of that concept.
     
 - Encapsulation is about you not having access to, or not being concerned with, how some implementation works internally.
-    
 
 While both the encapsulation and abstraction are important concepts in OOP, it requires more experience with programming in general to fully grasp these topics.
 
@@ -120,7 +116,6 @@ So, to understand what polymorphism is about, let's consider some real-life obje
 - A door has a bell. It could be said that the bell is a property of the door object. This bell can be rung. When would someone ring a bell on the door? Obviously, to get someone to show up at the door.
     
 - Now consider a bell on a bicycle. A bicycle has a bell. It could be said that the bell is a property of the bicycle object. This bell could also be rung. However, the reason, the intention, and the result of somebody ringing the bell on a bicycle is not the same as ringing the bell on a door.
-    
 
 The above concepts can be coded in JavaScript as follows:
 
