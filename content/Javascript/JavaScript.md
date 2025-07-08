@@ -123,3 +123,140 @@ In JavaScript, understanding the difference between [[primitive and non-primitiv
 
 ---------------------
 ### What Is [[JSON]], and How Do You Access Values Using Bracket and Dot Notation?
+
+
+---
+
+### Fundamental Object
+
+| Name       | Description                                     |
+| ---------- | ----------------------------------------------- |
+| `Object`   | Base of all objects.                            |
+| `Function` | Base function object.                           |
+| `Boolean`  | Boolean wrapper object.                         |
+| `Symbol`   | Unique and immutable value used as object keys. |
+### Global Value Properties
+|Name|Description|
+|---|---|
+|`globalThis`|The global `this` value across environments.|
+|`Infinity`|Represents mathematical infinity.|
+|`NaN`|Not a Number value.|
+|`undefined`|Primitive value used when a variable is not assigned.|
+
+### Global Function Properties
+|Name|Description|
+|---|---|
+|`eval()`|Evaluates JavaScript code represented as a string.|
+|`isFinite()`|Checks if a value is a finite number.|
+|`isNaN()`|Checks if a value is `NaN`.|
+|`parseFloat()`|Parses a string to a floating point number.|
+|`parseInt()`|Parses a string to an integer.|
+|`decodeURI()`|Decodes a full URI.|
+|`decodeURIComponent()`|Decodes a URI component.|
+|`encodeURI()`|Encodes a full URI.|
+|`encodeURIComponent()`|Encodes a URI component.|
+|`escape()` (Deprecated)|Encodes a string. Deprecated.|
+|`unescape()` (Deprecated)|Decodes an encoded string. Deprecated.|
+
+### Numbers and Dates
+|Name|Description|
+|---|---|
+|`Number`|Represents numbers.|
+|`BigInt`|Arbitrary precision integers.|
+|`Math`|Math constants and functions.|
+|`Date`|Dates and times.|
+|`Temporal`|Modern date/time API (proposal stage).|
+
+### Error Objects
+|Name|Description|
+|---|---|
+|`Error`|Base error object.|
+|`AggregateError`|Represents multiple errors.|
+|`EvalError`|Error in `eval()`.|
+|`RangeError`|Number out of allowable range.|
+|`ReferenceError`|Invalid reference to a variable.|
+|`SyntaxError`|Incorrect syntax.|
+|`TypeError`|Incorrect type usage.|
+|`URIError`|Error in URI handling.|
+|`InternalError`|Non-standard internal error.|
+### Text Processing
+| Name     | Description          |
+| -------- | -------------------- |
+| `String` | String manipulation. |
+| `RegExp` | Regular expressions. |
+
+### Indexed Collections
+
+|Name|Description|
+|---|---|
+|`Array`|Indexed collection of values.|
+|`TypedArray`|Generic typed array base.|
+|`Int8Array`|8-bit signed integer array.|
+|`Uint8Array`|8-bit unsigned integer array.|
+|`Uint8ClampedArray`|8-bit unsigned clamped array.|
+|`Int16Array`|16-bit signed integer array.|
+|`Uint16Array`|16-bit unsigned integer array.|
+|`Int32Array`|32-bit signed integer array.|
+|`Uint32Array`|32-bit unsigned integer array.|
+|`BigInt64Array`|64-bit signed BigInt array.|
+|`BigUint64Array`|64-bit unsigned BigInt array.|
+|`Float16Array`|16-bit float array.|
+|`Float32Array`|32-bit float array.|
+|`Float64Array`|64-bit float array.|
+
+### Keyed Collections
+|Name|Description|
+|---|---|
+|`Map`|Key-value pairs; remembers insertion order.|
+|`Set`|Unique values; remembers insertion order.|
+|`WeakMap`|Keys are weakly held.|
+|`WeakSet`|Values are weakly held.|
+
+### Structured Data
+|Name|Description|
+|---|---|
+|`ArrayBuffer`|Raw binary data buffer.|
+|`SharedArrayBuffer`|Shared buffer for threading.|
+|`DataView`|Low-level interface to buffer data.|
+|`Atomics`|Atomic operations for shared memory.|
+|`JSON`|JSON parsing and stringifying.|
+
+### Managing Memory
+|Name|Description|
+|---|---|
+|`WeakRef`|Weak reference to an object.|
+|`FinalizationRegistry`|Cleanup logic when object is GC’d.|
+
+### Control Abstractions
+
+|Name|Description|
+|---|---|
+|`Iterator`|Protocol for iteration.|
+|`AsyncIterator`|Async version of Iterator.|
+|`Promise`|Represents a future value.|
+|`GeneratorFunction`|Function that yields values.|
+|`AsyncGeneratorFunction`|Async generator function.|
+|`Generator`|Iterator returned from generator.|
+|`AsyncGenerator`|Async version of generator.|
+|`AsyncFunction`|Function using `async` keyword.|
+
+### Reflection 
+|Name|Description|
+|---|---|
+|`Reflect`|Provides methods for interceptable operations.|
+|`Proxy`|Custom behavior for fundamental operations.|
+
+### Internationalization (Intl)
+|Name|Description|
+|---|---|
+|`Intl`|Namespace for i18n features.|
+|`Intl.Collator`|String comparison.|
+|`Intl.DateTimeFormat`|Date and time formatting.|
+|`Intl.DisplayNames`|Localized display names.|
+|`Intl.DurationFormat`|Formatting durations (proposal).|
+|`Intl.ListFormat`|Formatting lists.|
+|`Intl.Locale`|BCP 47 language tag parsing.|
+|`Intl.NumberFormat`|Number formatting.|
+|`Intl.PluralRules`|Rules for pluralization.|
+|`Intl.RelativeTimeFormat`|Relative time formatting (e.g., "2 days ago").|
+|`Intl.Segmenter`|Unicode text segmentation.|
