@@ -1,5 +1,7 @@
 While HTML and CSS provide website structure, JavaScript brings interactivity to websites by enabling complex functionality, such as handling user input, animating elements, and even building full web applications.
 
+## [[JS fundamentals]]
+
 ### Data Types
 
 Data types help the program understand the kind of data it's working with, whether it's a number, text, or something else.
