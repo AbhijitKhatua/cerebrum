@@ -2,28 +2,19 @@ Conditional statements let you make decisions in your JavaScript code. They allo
 
 An `if` statement takes a condition and runs a block of code if that condition is truthy. Truthy values are any values that result in `true` when evaluated in a Boolean context like an `if` statement. Here are examples of truthy values:
 
-- non-empty strings, for example, `hello`
-    
-- any number other than `0` and `-0`, for example, `4`, `-5`, and others
-    
-- arrays
-    
-- objects
-    
-- the boolean `true`
+1. non-empty strings, for example, `hello`
+2. any number other than `0` and `-0`, for example, `4`, `-5`, and others
+3. arrays
+4. objects
+5. the boolean `true`
 
 On the other hand, falsy values are values that evaluate to `false` in a boolean context. JavaScript has few falsy values, which makes them easy to remember. Here are a few falsy values:
 
 - boolean `false`
-    
 - `0` (zero)
-    
 - `""` (empty string)
-    
 - `null`
-    
 - `undefined`
-    
 - `NaN` (Not a Number)
 
 Now, that we have a basic understanding of truthy and falsy values, let's see how it works with `if` statements. In this first example, we are using a couple of `if` statements to check against truthy and falsy values:

@@ -61,9 +61,9 @@ In the case that a value representing a number is in memory as a string, there a
 
 `parseInt` only returns whole numbers, so its use is diminished for decimals.
 
-[^1]
+> [!NOTE] Note
+> Additionally, a best practice for `parseInt` is to always include the _radix_ parameter. The radix parameter is used to specify which numerical system is to be used.
 
-[^1]: Additionally, a best practice for `parseInt` is to always include the _radix_ parameter. The radix parameter is used to specify which numerical system is to be used.
 
 ```js
 parseInt("101", 2); // 5
@@ -99,9 +99,8 @@ const coffees = ["French Roast", "Colombian", "Kona"];
 
 An array literal creates a new array object every time the literal is evaluated. For example, an array defined with a literal in the global scope is created once when the script loads. However, if the array literal is inside a function, a new array is instantiated every time that function is called.
 
-[^2]
-
-[^2]: Array literals create `Array` objects. See [`Array`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array) and [Indexed collections](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Indexed_collections) for details on `Array` objects.
+> [!NOTE] Note
+> Array literals create `Array` objects. See [`Array`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array) and [Indexed collections](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Indexed_collections) for details on `Array` objects.
 
 #### Extra commas in array literals
 
@@ -141,27 +140,25 @@ In the following example, the `length` of the array is four, and `myList[1]`�
 const myList = ["home", , "school", ,];
 ```
 
-[^3]
-
-[^3]:  [Trailing commas](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Trailing_commas) help keep git diffs clean when you have a multi-line array, because appending an item to the end only adds one line, but does not modify the previous line.
-	
-	```js
-	const myList = [
-	  "home",
-	  "school",
-	+ "hospital",
-	];
-	```
+> [!NOTE] Note
+> [Trailing commas](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Trailing_commas) help keep git diffs clean when you have a multi-line array, because appending an item to the end only adds one line, but does not modify the previous line.
+> 	
+>```js
+> 	const myList = [
+> 	  "home",
+> 	  "school",
+> 	+ "hospital",
+> 	];
+>```
 
 ### [Boolean literals](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Grammar_and_types#boolean_literals)
 
 The Boolean type has two literal values: `true` and `false`.
 
-[^4]
-
-[^4]: Do not confuse the primitive Boolean values `true` and `false` with the true and false values of the [`Boolean`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean) object.
-	
-	The Boolean object is a wrapper around the primitive Boolean data type. See [`Boolean`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean) for more information.
+> [!NOTE] Note
+> Do not confuse the primitive Boolean values `true` and `false` with the true and false values of the [`Boolean`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean) object.
+> 	
+> 	The Boolean object is a wrapper around the primitive Boolean data type. See [`Boolean`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean) for more information.
 
 ### [Numeric literals](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Grammar_and_types#numeric_literals)
 
@@ -300,5 +297,176 @@ A regex literal (which is defined in detail [later](https://developer.mozilla.o
 
 ```js
 const re = /ab+c/;
+```
+
+### [String literals](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Grammar_and_types#string_literals)
+
+A string literal is zero or more characters enclosed in double (`"`) or single (`'`) quotation marks. A string must be delimited by quotation marks of the same type (that is, either both single quotation marks, or both double quotation marks).
+
+The following are examples of string literals:
+
+```js
+'foo'
+"bar"
+'1234'
+'one line \n another line'
+"Joyo's cat"
+```
+
+You should use string literals unless you specifically need to use a `String` object. See [`String`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String) for details on `String` objects.
+
+You can call any of the [`String`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String) object's methods on a string literal value. JavaScript automatically converts the string literal to a temporary String object, calls the method, then discards the temporary String object. You can also use the `length` property with a string literal:
+
+```js
+// Will print the number of symbols in the string including whitespace.
+console.log("Joyo's cat".length); // In this case, 10.
+```
+
+[Template literals](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Template_literals) are also available. Template literals are enclosed by the back-tick (`` ` ``) ([grave accent](https://en.wikipedia.org/wiki/Grave_accent)) character instead of double or single quotes.
+
+Template literals provide syntactic sugar for constructing strings. (This is similar to string interpolation features in Perl, Python, and more.)
+
+```js
+// Basic literal string creation
+`In JavaScript '\n' is a line-feed.`;
+
+// Multiline strings
+`In JavaScript, template strings can run
+ over multiple lines, but double and single
+ quoted strings cannot.`;
+
+// String interpolation
+const name = "Lev",
+  time = "today";
+`Hello ${name}, how are you ${time}?`;
+```
+
+[Tagged templates](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Template_literals#tagged_templates) are a compact syntax for specifying a template literal along with a call to a "tag" function for parsing it. A tagged template is just a more succinct and semantic way to invoke a function that processes a string and a set of relevant values. The name of the template tag function precedes the template literal — as in the following example, where the template tag function is named `print`. The `print` function will interpolate the arguments and serialize any objects or arrays that may come up, avoiding the pesky `[object Object]`.
+
+``` js
+const formatArg = (arg) => {
+  if (Array.isArray(arg)) {
+    // Print a bulleted list
+    return arg.map((part) => `- ${part}`).join("\n");
+  }
+  if (arg.toString === Object.prototype.toString) {
+    // This object will be serialized to "[object Object]".
+    // Let's print something nicer.
+    return JSON.stringify(arg);
+  }
+  return arg;
+};
+
+const print = (segments, ...args) => {
+  // For any well-formed template literal, there will always be N args and
+  // (N+1) string segments.
+  let message = segments[0];
+  segments.slice(1).forEach((segment, index) => {
+    message += formatArg(args[index]) + segment;
+  });
+  console.log(message);
+};
+
+const todos = [
+  "Learn JavaScript",
+  "Learn Web APIs",
+  "Set up my website",
+  "Profit!",
+];
+
+const progress = { javascript: 20, html: 50, css: 10 };
+
+print`I need to do:
+${todos}
+My current progress is: ${progress}
+`;
+
+// I need to do:
+// - Learn JavaScript
+// - Learn Web APIs
+// - Set up my website
+// - Profit!
+// My current progress is: {"javascript":20,"html":50,"css":10}
+```
+
+Since tagged template literals are just sugar of function calls, you can re-write the above as an equivalent function call:
+
+```js
+print(["I need to do:\n", "\nMy current progress is: ", "\n"], todos, progress);
+```
+
+This may be reminiscent of the `console.log`-style interpolation:
+
+```js
+const todos = [
+  "Learn JavaScript",
+  "Learn Web APIs",
+  "Set up my website",
+  "Profit!",
+];
+
+const progress = { javascript: 20, html: 50, css: 10 };
+
+console.log("I need to do:\n%o\nMy current progress is: %o\n", todos, progress);
+```
+
+You can see how the tagged template reads more naturally than a traditional "formatter" function, where the variables and the template itself have to be declared separately.
+
+#### Using special characters in strings
+
+In addition to ordinary characters, you can also include special characters in strings, as shown in the following example.
+
+```js
+"one line \n another line";
+```
+
+The following table lists the special characters that you can use in JavaScript strings.
+
+|Character|Meaning|
+|---|---|
+|`\0`|Null Byte|
+|`\b`|Backspace|
+|`\f`|Form Feed|
+|`\n`|New Line|
+|`\r`|Carriage Return|
+|`\t`|Tab|
+|`\v`|Vertical tab|
+|`\'`|Apostrophe or single quote|
+|`\"`|Double quote|
+|`\\`|Backslash character|
+|`\XXX`|The character with the Latin-1 encoding specified by up to three octal digits `XXX` between `0` and `377`. For example, `\251` is the octal sequence for the copyright symbol.|
+|`\xXX`|The character with the Latin-1 encoding specified by the two hexadecimal digits `XX` between `00` and `FF`. For example, `\xA9` is the hexadecimal sequence for the copyright symbol.|
+|`\uXXXX`|The Unicode character specified by the four hexadecimal digits `XXXX`. For example, `\u00A9` is the Unicode sequence for the copyright symbol. See [Unicode escape sequences](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Lexical_grammar#string_literals).|
+|`\u{XXXXX}`|Unicode code point escapes. For example, `\u{2F804}` is the same as the Unicode escapes `\uD87E\uDC04`.|
+#### Escaping characters
+
+For characters not listed in the table, a preceding backslash is ignored, but this usage is deprecated and should be avoided.
+
+You can insert a quotation mark inside a string by preceding it with a backslash. This is known as _escaping_ the quotation mark. For example:
+
+```js
+const quote = "He read \"The Cremation of Sam McGee\" by R.W. Service.";
+console.log(quote);
+```
+
+The result of this would be:
+
+He read "The Cremation of Sam McGee" by R.W. Service.
+
+To include a literal backslash inside a string, you must escape the backslash character. For example, to assign the file path `c:\temp` to a string, use the following:
+
+```js
+const home = "c:\\temp";
+```
+
+You can also escape line breaks by preceding them with backslash. The backslash and line break are both removed from the value of the string.
+
+```js
+const str =
+  "this string \
+is broken \
+across multiple \
+lines.";
+console.log(str); // this string is broken across multiple lines.
 ```
 
