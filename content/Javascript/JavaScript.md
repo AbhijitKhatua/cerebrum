@@ -93,7 +93,7 @@ In JavaScript, functions and object methods are both ways to encapsulate reusabl
  [[Difference Between Functions and Object Methods]]
 ### [[Operators]]
 
-### [[Statements]]
+### [[Control flow and error handling]]
 
 ### [[Methods]]
 
